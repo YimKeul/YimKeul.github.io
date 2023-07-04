@@ -62,6 +62,7 @@ const S = {
     border-radius: 3.125rem 3.125rem 0 0;
     width: 18.25rem;
     height: 22.375rem;
+    position: fixed;
   `,
 
   glass: styled.div`
