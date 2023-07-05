@@ -14,7 +14,6 @@ const Main = () => {
       {PC && <Navigator />}
       <Home />
       <About />
-      <About />
     </S.container>
   );
 };

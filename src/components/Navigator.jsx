@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { main, glass } from "./";
 import { rsicons } from "../images";
 import { MdHome, MdPerson, MdOutlineStar, MdMonitor } from "react-icons/md";
 
@@ -59,7 +60,7 @@ const Navigator = () => {
 
 const S = {
   container: styled.div`
-    background: linear-gradient(180deg, #a175ff 0%, #4f5ff2 100%);
+    background: ${() => main};
     border-radius: 3.125rem 3.125rem 0 0;
     width: 18.25rem;
     height: 22.375rem;
@@ -71,11 +72,7 @@ const S = {
     width: 18.25rem;
     height: 4.125rem;
     border-radius: 0 0 3.125rem 3.125rem;
-    background: linear-gradient(
-      167deg,
-      rgba(199, 199, 199, 0.3) 0%,
-      rgba(255, 255, 255, 0.1) 100%
-    );
+    background: ${() => glass};
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(20px);
   `,

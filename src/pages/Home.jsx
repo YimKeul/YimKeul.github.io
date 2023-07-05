@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { bgcard } from "../images";
+import { point } from "../components";
 
 const Home = () => {
   return (
@@ -11,9 +12,9 @@ const Home = () => {
           <br /> FrontEnd 개발자 이세준입니다.
         </S.title>
         <S.desc>
-          유연하게 변화하는 스킬셋과 시대를 따라가기 위해 적극적으로 도전하는
+          시시각각 변화하는 스킬과 시대를 따라가기 위해 적극적으로 도전하는
           프론트엔드 개발자 이세준입니다. 웹(React), 앱(React-Native),
-          iOS(SwiftUI)를 활용해 변화에 유연하 게 대응할 수 있는 개발자가 되고
+          iOS(SwiftUI)를 활용해 변화에 유연하게 대응할 수 있는 개발자가 되고
           싶습니다.
         </S.desc>
       </S.inner>
@@ -37,7 +38,7 @@ const S = {
   `,
   inner: styled.div`
     margin-block: 4.88rem;
-    padding-inline: 3.87rem;
+    padding-inline: 3.88rem;
   `,
   title: styled.div`
     color: white;
@@ -48,7 +49,7 @@ const S = {
     line-height: normal;
   `,
   point: styled.span`
-    color: #00ffa3;
+    color: ${() => point};
     font-size: 3.125rem;
     font-family: Inter;
     font-style: normal;
