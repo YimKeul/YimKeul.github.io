@@ -96,12 +96,11 @@ const S = {
     font-size: 1.2rem;
     font-family: Inter;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 2.5rem;
     margin-top: 5rem;
     @media screen and (max-width: 767px) {
       margin-top: 2rem;
-      font-weight: 600;
       line-height: 2rem;
     }
   `,

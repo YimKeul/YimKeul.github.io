@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { point, main, purple } from "../components";
+import { point, main, purple, SkillBox } from "../components";
 import { profile } from "../images";
 import {
   MdPerson,
@@ -31,7 +31,10 @@ const About = () => {
           <S.content>
             <S.title>안녕하세요 👋🏻</S.title>
             <S.desc>
-              가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마
+              새로운 트렌드와 기술을 주시하며 학습하고, 현실적인 문제에 창의적인
+              솔루션을 제공하기 위해 노력하는 개발자 이세준입니다.
+              <br /> 다양한 도구와 기술을 습득하고 활용함으로써 변화하는 시장과
+              요구 사항에 유연하게 대응할 수 있는 개발자로 성장하고자 합니다.
             </S.desc>
             {isMore ? (
               <>
@@ -49,16 +52,34 @@ const About = () => {
                   />
                   <S.moreText>더보기</S.moreText>
                 </S.infoLabel>
-                <h1>asdfa</h1>
-                <h1>asdfa</h1>
-                <h1>asdfa</h1>
-                <h1>asdfa</h1>
-                <h1>asdfa</h1>
-                <h1>asdfa</h1>
-                <h1>asdfa</h1>
-                <h1>asdfa</h1>
-                <h1>asdfa</h1>
-                <h1>asdfa</h1>
+                <br />
+                <S.title>개발 직무</S.title>
+
+                <S.row>
+                  <SkillBox text={"WEB 개발자"} />
+                  <SkillBox text={"IOS 개발자"} />
+                  <SkillBox text={"크로스플랫폼 앱개발자"} />
+                </S.row>
+                <S.title>기술 스택</S.title>
+                <S.row>
+                  <SkillBox text={"JavaScript"} />
+                  <SkillBox text={"TypeScript"} />
+                  <SkillBox text={"Python"} />
+                  <SkillBox text={"Java"} />
+                  <SkillBox text={"Swift"} />
+                </S.row>
+                <S.row>
+                  <SkillBox text={"React"} />
+                  <SkillBox text={"React-Native"} />
+                  <SkillBox text={"Git"} />
+                  <SkillBox text={"Oracle"} />
+                  <SkillBox text={"MySQL"} />
+                </S.row>
+                <S.row>
+                  <SkillBox text={"Figma"} />
+                  <SkillBox text={"Notion"} />
+                  <SkillBox text={"Slack"} />
+                </S.row>
               </>
             ) : (
               <S.infoLabel
@@ -75,7 +96,6 @@ const About = () => {
                 <S.moreText>더보기</S.moreText>
               </S.infoLabel>
             )}
-
             <S.line />
             <S.infoBox>
               <S.row>
@@ -163,15 +183,16 @@ const S = {
   row: styled.div`
     display: flex;
     flex: 1;
-    justify-content: space-between;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     @media screen and (max-width: 767px) {
       flex-direction: column;
     }
   `,
   imgBox: styled.div`
     margin-top: 2.87rem;
+    margin-right: 2.87rem;
     @media screen and (max-width: 767px) {
+      margin-right: 0;
       align-self: center;
     }
   `,
@@ -192,13 +213,20 @@ const S = {
     line-height: normal;
   `,
   desc: styled.div`
+    width: 30.75rem;
     color: black;
     font-size: 1.2rem;
     font-family: Inter;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 2.5rem;
     margin-block: 1.5rem;
+    @media screen and (max-width: 767px) {
+      width: auto;
+      margin-top: 0.5rem;
+      font-weight: 500;
+      line-height: 2rem;
+    }
   `,
   line: styled.div`
     width: 100%;

@@ -1,3 +1,4 @@
 import Navigator from "./Navigator";
-import { main, point, glass, purple } from "./Colors";
-export { Navigator, main, point, glass, purple };
+import SkillBox from "./SkillBox";
+import { main, point, glass, purple, gray } from "./Colors";
+export { Navigator, main, point, glass, purple, SkillBox, gray };

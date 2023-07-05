@@ -7,4 +7,6 @@ const glass = `linear-gradient(
     rgba(255, 255, 255, 0.1) 100%
   )`;
 
-export { main, point, glass, purple };
+const gray = "#B9BAC0";
+
+export { main, point, glass, purple, gray };
