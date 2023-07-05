@@ -1,5 +1,5 @@
 import React from "react";
-import { Home, About } from "./";
+import { Home, About, Experience, Portfoilo } from "./";
 import { Navigator } from "../components";
 import styled from "styled-components";
 
@@ -14,6 +14,8 @@ const Main = () => {
       {PC && <Navigator />}
       <Home />
       <About />
+      <Experience />
+      <Portfoilo />
     </S.container>
   );
 };
