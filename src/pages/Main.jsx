@@ -22,7 +22,7 @@ const Main = () => {
 const S = {
   container: styled.div`
     position: relative;
-    width: 1240px;
+    width: 1190px;
     margin: 50px auto;
   `,
 };
