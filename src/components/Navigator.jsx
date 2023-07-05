@@ -1,17 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import { main } from "./Colors";
-import { react, swift } from "../images";
+import { rsicons } from "../images";
 import { MdHome, MdPerson, MdOutlineStar, MdMonitor } from "react-icons/md";
 
 const Navigator = () => {
   return (
-    <S.container>
-      <S.glass>
+    <>
+      <S.container>
         <S.inner>
           <S.name>Se Jun</S.name>
           <br />
-          <S.position>Front End Developer</S.position>
+          <S.position>Front End / Mobile Developer</S.position>
           {/*  */}
           <S.navBtn style={{ marginTop: "3.12rem" }}>
             <MdHome
@@ -47,18 +46,20 @@ const Navigator = () => {
           </S.navBtn>
           {/*  */}
         </S.inner>
-        <S.outer>
-          <img src={react} alt="logo" />
-          <img src={swift} alt="logo" style={{ marginLeft: "1rem" }} />
-        </S.outer>
-      </S.glass>
-    </S.container>
+
+        <S.glass>
+          <S.outer>
+            <img src={rsicons} alt="logo" />
+          </S.outer>
+        </S.glass>
+      </S.container>
+    </>
   );
 };
 
 const S = {
   container: styled.div`
-    background-color: ${main};
+    background: linear-gradient(180deg, #a175ff 0%, #4f5ff2 100%);
     border-radius: 3.125rem 3.125rem 0 0;
     width: 18.25rem;
     height: 22.375rem;
@@ -66,16 +67,17 @@ const S = {
   `,
 
   glass: styled.div`
-    width: 18.3125rem;
-    height: 26.5rem;
-    border-radius: 3.125rem;
+    margin-top: 3rem;
+    width: 18.25rem;
+    height: 4.125rem;
+    border-radius: 0 0 3.125rem 3.125rem;
     background: linear-gradient(
-      141deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(199, 199, 199, 0.3) 100%
+      167deg,
+      rgba(199, 199, 199, 0.3) 0%,
+      rgba(255, 255, 255, 0.1) 100%
     );
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(20px);
   `,
   inner: styled.div`
     padding-top: 2.13rem;
@@ -113,8 +115,8 @@ const S = {
     margin-left: 0.94rem;
   `,
   outer: styled.div`
-    padding-top: 4.125rem;
-    padding-inline: 2.2rem;
+    margin-top: -1.2rem;
+    padding-inline: 1.2rem;
     float: right;
   `,
 };

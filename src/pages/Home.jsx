@@ -13,7 +13,7 @@ const S = {
     height: 35.56531rem;
     border-radius: 3.125rem;
     background: #fff;
-    box-shadow: 0px 0px 50px 0px rgba(190, 4, 255, 0.1);
+    box-shadow: 0px 0px 30px 0px rgba(161, 117, 255, 0.3);
     margin-bottom: 5rem;
     @media screen and (min-width: 1024px) {
       float: right;
