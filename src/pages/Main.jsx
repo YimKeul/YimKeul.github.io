@@ -1,17 +1,16 @@
 import React from "react";
 import { Home, About, Experience, Portfoilo } from "./";
 import { Navigator } from "../components";
+import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
 
-const PC = window.innerWidth > 1024;
-
 const Main = () => {
-  {
-    console.log(window.innerWidth);
-  }
+  // const isMobile = useMediaQuery({ maxWidth: 767 });
+  // const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
+  const isDesktop = useMediaQuery({ minWidth: 1024 });
   return (
     <S.container>
-      {PC && <Navigator />}
+      {isDesktop && <Navigator />}
       <Home />
       <About />
       <Experience />
@@ -23,8 +22,11 @@ const Main = () => {
 const S = {
   container: styled.div`
     position: relative;
-    width: 1190px;
+    width: 1170px;
     margin: 50px auto;
+    @media screen and (max-width: 767px) {
+      width: 90%;
+    }
   `,
 };
 

@@ -9,9 +9,10 @@ import {
   MdLink,
   MdPlayArrow,
 } from "react-icons/md";
-// const PC = window.innerWidth > 1024;
+import { useMediaQuery } from "react-responsive";
 
 const About = () => {
+  const isDesktop = useMediaQuery({ minWidth: 1024 });
   const [isMore, setMore] = useState(false);
   const handleMore = () => {
     setMore(!isMore);
@@ -24,9 +25,9 @@ const About = () => {
           <S.bar />
         </S.section>
         <S.row>
-          <div style={{ marginTop: "2.87rem" }}>
+          <S.imgBox>
             <img src={profile} alt="profile" />
-          </div>
+          </S.imgBox>
           <S.content>
             <S.title>안녕하세요 👋🏻</S.title>
             <S.desc>
@@ -78,7 +79,7 @@ const About = () => {
             <S.line />
             <S.infoBox>
               <S.row>
-                <div style={{ flex: 2 }}>
+                <S.infoArea1>
                   <S.infoLabel>
                     <MdPerson style={{ width: "1rem", height: "1rem" }} />
                     <S.infoText>이세준</S.infoText>
@@ -96,8 +97,8 @@ const About = () => {
                     <MdEmail style={{ width: "1rem", height: "1rem" }} />
                     <S.infoText>leesjun29@gmail.com</S.infoText>
                   </S.infoLabel>
-                </div>
-                <div style={{ flex: 1 }}>
+                </S.infoArea1>
+                <S.infoArea2>
                   <S.infoLabel>
                     <MdLink style={{ width: "1rem", height: "1rem" }} />
                     <S.infoText>github</S.infoText>
@@ -112,7 +113,7 @@ const About = () => {
                     <MdLink style={{ width: "1rem", height: "1rem" }} />
                     <S.infoText>linkednIn</S.infoText>
                   </S.infoLabel>
-                </div>
+                </S.infoArea2>
               </S.row>
             </S.infoBox>
           </S.content>
@@ -124,19 +125,26 @@ const About = () => {
 
 const S = {
   container: styled.div`
-    width: 54.375rem;
-    min-height: 35.56531rem;
+    width: 52rem;
+    min-height: 30rem;
     border-radius: 3.125rem;
     background: #fff;
     box-shadow: 0px 0px 30px 0px rgba(161, 117, 255, 0.3);
     margin-bottom: 5rem;
-    @media screen and (min-width: 1024px) {
-      float: right;
+    float: right;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      height: auto;
+      float: none;
     }
   `,
   inner: styled.div`
     margin-block: 3.25rem;
     padding-inline: 3.88rem;
+    @media screen and (max-width: 767px) {
+      margin: 0;
+      padding-block: 3rem;
+    }
   `,
   section: styled.div`
     color: #000;
@@ -157,11 +165,24 @@ const S = {
     flex: 1;
     justify-content: space-between;
     align-items: flex-start;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  `,
+  imgBox: styled.div`
+    margin-top: 2.87rem;
+    @media screen and (max-width: 767px) {
+      align-self: center;
+    }
   `,
   content: styled.div`
     width: 30.75rem;
     margin-top: 2.87rem;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
   `,
+
   title: styled.div`
     color: #000;
     font-size: 1.25rem;
@@ -200,6 +221,15 @@ const S = {
     font-weight: 700;
     line-height: normal;
     margin-left: 0.94rem;
+  `,
+  infoArea1: styled.div`
+    flex: 2;
+    @media screen and (max-width: 767px) {
+      flex: 1;
+    }
+  `,
+  infoArea2: styled.div`
+    flex: 1;
   `,
   moreText: styled.span`
     background: ${() => main};
