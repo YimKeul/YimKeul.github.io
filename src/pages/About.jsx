@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { point, main, purple, SkillBox } from "../components";
+import { point, main, purple, SkillBox, SkillSet } from "../components";
 import { profile } from "../images";
 import {
   MdPerson,
@@ -53,41 +53,7 @@ const About = () => {
                   <S.moreText>더보기</S.moreText>
                 </S.infoLabel>
                 <br />
-
-                <S.title>개발 직무</S.title>
-                <S.row>
-                  <SkillBox text={"WEB 개발자"} />
-                  <SkillBox text={"IOS 개발자"} />
-                  <SkillBox text={"크로스플랫폼 앱개발자"} />
-                </S.row>
-                <S.title style={{ marginTop: "0.6rem" }}>기술 스택</S.title>
-                <S.row>
-                  <SkillBox text={"JavaScript"} />
-                  <SkillBox text={"TypeScript"} />
-                  <SkillBox text={"Python"} />
-                  <SkillBox text={"Java"} />
-                  <SkillBox text={"Swift"} />
-                </S.row>
-                <S.row>
-                  <SkillBox text={"React"} />
-                  <SkillBox text={"React-Native"} />
-                  <SkillBox text={"SwiftUI"} />
-                  <SkillBox text={"Oracle"} />
-                  <SkillBox text={"Git"} />
-                </S.row>
-                <S.row>
-                  <SkillBox text={"Figma"} />
-                  <SkillBox text={"Notion"} />
-                  <SkillBox text={"Slack"} />
-                </S.row>
-                <S.title style={{ marginTop: "0.6rem" }}>자격증</S.title>
-                <S.cerBox>
-                  {`SQLD
-                  한국사능력검정 2급
-                  컴퓨터활용능력 1급
-                  정보처리기능사
-                  `}
-                </S.cerBox>
+                <SkillSet />
               </>
             ) : (
               <S.infoLabel
@@ -160,6 +126,10 @@ const S = {
     box-shadow: 0px 0px 30px 0px rgba(161, 117, 255, 0.3);
     margin-bottom: 5rem;
     float: right;
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      width: 100%;
+      float: none;
+    }
     @media screen and (max-width: 767px) {
       width: 100%;
       height: auto;
@@ -169,9 +139,10 @@ const S = {
   inner: styled.div`
     margin-block: 3.25rem;
     padding-inline: 3.88rem;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1023px) {
       margin: 0;
       padding-block: 3rem;
+      padding-inline: 2rem;
     }
   `,
   section: styled.div`
@@ -191,15 +162,21 @@ const S = {
   row: styled.div`
     display: flex;
     flex: 1;
-    /* align-items: flex-start; */
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1023px) {
       flex-direction: column;
+    }
+  `,
+  row2: styled.div`
+    display: flex;
+    flex: 1;
+    @media screen and (max-width: 1023px) {
+      width: 100%;
     }
   `,
   imgBox: styled.div`
     margin-top: 2.87rem;
     margin-right: 2.87rem;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1023px) {
       margin-right: 0;
       align-self: center;
     }
@@ -207,7 +184,7 @@ const S = {
   content: styled.div`
     width: 30.75rem;
     margin-top: 2.87rem;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1023px) {
       width: 100%;
     }
   `,
@@ -229,7 +206,7 @@ const S = {
     font-weight: 600;
     line-height: 2.5rem;
     margin-block: 1.5rem;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1023px) {
       width: auto;
       margin-top: 0.5rem;
       font-weight: 500;
@@ -261,7 +238,7 @@ const S = {
   `,
   infoArea1: styled.div`
     flex: 2;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1023px) {
       flex: 1;
     }
   `,

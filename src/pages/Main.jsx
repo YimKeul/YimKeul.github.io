@@ -24,6 +24,9 @@ const S = {
     position: relative;
     width: 1170px;
     margin: 50px auto;
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      width: 90%;
+    }
     @media screen and (max-width: 767px) {
       width: 90%;
     }

@@ -6,15 +6,19 @@ import { useMediaQuery } from "react-responsive";
 
 const Home = () => {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
+  const isTablet = useMediaQuery({ maxWidth: 1023 });
+  const isMobile = useMediaQuery({ maxWidth: 767 });
   return (
     <S.container>
       <S.inner>
-        {isDesktop ? (
+        {isMobile ? (
           <>
             <S.title>
-              {/* <S.point>트렌드</S.point>에 맞춰 함께 성장하는 */}
-              트렌드에 맞춰 함께 성장하는
-              <br /> FrontEnd 개발자 이세준입니다.
+              {/* <S.point>트렌드</S.point>에 맞춰 */}
+              트렌드에 맞춰
+              <br /> 함께 성장하는
+              <br />
+              이세준입니다.
             </S.title>
             <S.desc>
               시시각각 변화하는 스킬과 시대를 따라가기 위해 적극적으로 도전하는
@@ -26,11 +30,9 @@ const Home = () => {
         ) : (
           <>
             <S.title>
-              {/* <S.point>트렌드</S.point>에 맞춰 */}
-              트렌드에 맞춰
-              <br /> 함께 성장하는
-              <br />
-              이세준입니다.
+              {/* <S.point>트렌드</S.point>에 맞춰 함께 성장하는 */}
+              트렌드에 맞춰 함께 성장하는
+              <br /> FrontEnd 개발자 이세준입니다.
             </S.title>
             <S.desc>
               시시각각 변화하는 스킬과 시대를 따라가기 위해 적극적으로 도전하는
@@ -55,6 +57,11 @@ const S = {
     background-size: cover;
     margin-bottom: 5rem;
     float: right;
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      width: 100%;
+      height: auto;
+      float: none;
+    }
     @media screen and (max-width: 767px) {
       width: 100%;
       height: auto;
@@ -62,11 +69,12 @@ const S = {
     }
   `,
   inner: styled.div`
-    margin-block: 4.88rem;
+    margin-block: 3.25rem;
     padding-inline: 3.88rem;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1023px) {
       margin: 0;
       padding-block: 3rem;
+      padding-inline: 2rem;
     }
   `,
   title: styled.div`
@@ -76,7 +84,7 @@ const S = {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1023px) {
       line-height: 3.8rem;
       font-size: 2.5rem;
     }
@@ -88,7 +96,7 @@ const S = {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1023px) {
       line-height: 3.8rem;
       font-size: 2.5rem;
     }
@@ -101,7 +109,7 @@ const S = {
     font-weight: 600;
     line-height: 2.5rem;
     margin-top: 5rem;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1023px) {
       margin-top: 2rem;
       line-height: 2rem;
     }

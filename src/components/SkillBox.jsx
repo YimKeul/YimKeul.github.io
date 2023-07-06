@@ -21,8 +21,10 @@ const S = {
     line-height: normal;
     margin-block: 0.6rem;
     margin-right: 0.6rem;
+    text-align: center;
     @media screen and (max-width: 767px) {
-      text-align: center;
+      padding-block: 0.5rem;
+      width: fit-content;
     }
   `,
 };
