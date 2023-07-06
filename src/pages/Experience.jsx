@@ -1,12 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { point, main, purple, gray } from "../components";
-import { useMediaQuery } from "react-responsive";
 import data from "../assets/ExperienceData";
 
 const Experience = () => {
-  // const isDesktop = useMediaQuery({ minWidth: 1024 });
-
   return (
     <S.container>
       <S.inner>
@@ -66,6 +63,7 @@ const S = {
     float: right;
     @media screen and (min-width: 768px) and (max-width: 1023px) {
       width: 100%;
+      height: auto;
       float: none;
     }
     @media screen and (max-width: 767px) {
@@ -104,6 +102,9 @@ const S = {
     top: 0;
     bottom: 0;
     left: 12rem;
+    @media screen and (max-width: 767px) {
+      left: 8.5rem;
+    }
   `,
   tlBarEmptyCircle: styled.span`
     width: 14px;
@@ -112,10 +113,12 @@ const S = {
     border: 1px solid ${() => point};
     border-radius: 50%;
     position: absolute;
-    /* top: 1rem; */
     left: 11.65rem;
     right: 0;
     z-index: 1;
+    @media screen and (max-width: 767px) {
+      left: 8.15rem;
+    }
   `,
 
   tlBarFillCircle: styled.span`
@@ -126,8 +129,11 @@ const S = {
     border-radius: 50%;
     position: absolute;
     top: 0.2rem;
-    left: 11.85rem;
+    left: 11.8rem;
     z-index: 2;
+    @media screen and (max-width: 767px) {
+      left: 8.355rem;
+    }
   `,
 
   tlBox: styled.div`
@@ -138,11 +144,14 @@ const S = {
     display: flex;
     margin-bottom: 3rem;
     position: relative;
-    /* background-color: pink; */
   `,
   tlDateBox: styled.div`
-    width: 7.88rem;
-    margin-right: 7.88rem;
+    width: 9rem;
+    margin-right: 6rem;
+    @media screen and (max-width: 767px) {
+      min-width: 7.88rem;
+      margin-right: 2rem;
+    }
   `,
   tlDate: styled.span`
     color: ${() => gray};

@@ -166,13 +166,6 @@ const S = {
       flex-direction: column;
     }
   `,
-  row2: styled.div`
-    display: flex;
-    flex: 1;
-    @media screen and (max-width: 1023px) {
-      width: 100%;
-    }
-  `,
   imgBox: styled.div`
     margin-top: 2.87rem;
     margin-right: 2.87rem;

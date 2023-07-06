@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { point, main, purple } from "../components";
+import { MdSmartphone, MdOutlineWebAsset } from "react-icons/md";
+import { SiIos } from "react-icons/si";
+import { point, main, purple, PfBox } from "../components";
 
 const Portfoilo = () => {
   return (
@@ -10,6 +12,14 @@ const Portfoilo = () => {
           Portfoilo
           <S.bar />
         </S.section>
+        {/*  */}
+        <S.content>
+          <S.row>
+            <PfBox />
+            <PfBox />
+            <PfBox />
+          </S.row>
+        </S.content>
       </S.inner>
     </S.container>
   );
@@ -18,7 +28,7 @@ const Portfoilo = () => {
 const S = {
   container: styled.div`
     width: 52rem;
-    min-height: 30rem;
+    /* min-height: 30rem; */
     border-radius: 3.125rem;
     background: #fff;
     box-shadow: 0px 0px 30px 0px rgba(161, 117, 255, 0.3);
@@ -26,6 +36,7 @@ const S = {
     float: right;
     @media screen and (min-width: 768px) and (max-width: 1023px) {
       width: 100%;
+      height: auto;
       float: none;
     }
     @media screen and (max-width: 767px) {
@@ -56,6 +67,21 @@ const S = {
     height: 0.25rem;
     background-color: ${() => point};
     border-radius: 1.25rem;
+  `,
+  content: styled.div`
+    margin-top: 2.87rem;
+    @media screen and (max-width: 1023px) {
+      width: 100%;
+    }
+  `,
+  row: styled.div`
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+    }
   `,
 };
 
