@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
-import { point, main, purple } from "../components";
+import { point, main, purple, gray } from "../components";
 import { useMediaQuery } from "react-responsive";
+import data from "../assets/ExperienceData";
 
 const Experience = () => {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
+
   return (
     <S.container>
       <S.inner>
@@ -13,18 +15,38 @@ const Experience = () => {
           <S.bar />
         </S.section>
         <S.tlBox>
-          <S.tlItem>
-            <div style={{ marginRight: "10rem" }}>
-              <span>2020</span>
-              <S.tlBarFillCircle />
-              <S.tlBarEmptyCircle />
-            </div>
+          {data.map((data, i) => {
+            if (i > 0) {
+              return (
+                <S.tlItem key={i}>
+                  <S.tlDateBox>
+                    <S.tlDate>{data.Date}</S.tlDate>
+                    <S.tlBarEmptyCircle />
+                  </S.tlDateBox>
 
-            <div>
-              <span>title</span>
-              <p>12312</p>
-            </div>
-          </S.tlItem>
+                  <div>
+                    <S.tlTitle>{data.Title}</S.tlTitle>
+                    <S.tlDesc>{data.Desc}</S.tlDesc>
+                  </div>
+                </S.tlItem>
+              );
+            } else {
+              return (
+                <S.tlItem key={i}>
+                  <S.tlDateBox>
+                    <S.tlDate>{data.Date}</S.tlDate>
+                    <S.tlBarFillCircle />
+                    <S.tlBarEmptyCircle />
+                  </S.tlDateBox>
+
+                  <div>
+                    <S.tlTitle>{data.Title}</S.tlTitle>
+                    <S.tlDesc>{data.Desc}</S.tlDesc>
+                  </div>
+                </S.tlItem>
+              );
+            }
+          })}
 
           <S.tlBar />
         </S.tlBox>
@@ -77,7 +99,7 @@ const S = {
     border-right: 2px solid ${() => point};
     top: 0;
     bottom: 0;
-    left: 9.4rem;
+    left: 12rem;
   `,
   tlBarEmptyCircle: styled.span`
     width: 14px;
@@ -87,7 +109,7 @@ const S = {
     border-radius: 50%;
     position: absolute;
     /* top: 1rem; */
-    left: 9rem;
+    left: 11.65rem;
     right: 0;
     z-index: 1;
   `,
@@ -100,7 +122,7 @@ const S = {
     border-radius: 50%;
     position: absolute;
     top: 0.2rem;
-    left: 9.18rem;
+    left: 11.85rem;
     z-index: 2;
   `,
 
@@ -110,8 +132,40 @@ const S = {
   `,
   tlItem: styled.div`
     display: flex;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     position: relative;
+    /* background-color: pink; */
+  `,
+  tlDateBox: styled.div`
+    width: 7.88rem;
+    margin-right: 7.88rem;
+  `,
+  tlDate: styled.span`
+    color: ${() => gray};
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  `,
+  tlTitle: styled.span`
+    color: #000;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  `,
+  tlDesc: styled.div`
+    color: #848484;
+    font-family: Inter;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 0.5rem;
+    white-space: pre-line;
+    margin-block: 0.6rem;
   `,
 };
 

@@ -53,14 +53,14 @@ const About = () => {
                   <S.moreText>더보기</S.moreText>
                 </S.infoLabel>
                 <br />
-                <S.title>개발 직무</S.title>
 
+                <S.title>개발 직무</S.title>
                 <S.row>
                   <SkillBox text={"WEB 개발자"} />
                   <SkillBox text={"IOS 개발자"} />
                   <SkillBox text={"크로스플랫폼 앱개발자"} />
                 </S.row>
-                <S.title>기술 스택</S.title>
+                <S.title style={{ marginTop: "0.6rem" }}>기술 스택</S.title>
                 <S.row>
                   <SkillBox text={"JavaScript"} />
                   <SkillBox text={"TypeScript"} />
@@ -71,15 +71,23 @@ const About = () => {
                 <S.row>
                   <SkillBox text={"React"} />
                   <SkillBox text={"React-Native"} />
-                  <SkillBox text={"Git"} />
+                  <SkillBox text={"SwiftUI"} />
                   <SkillBox text={"Oracle"} />
-                  <SkillBox text={"MySQL"} />
+                  <SkillBox text={"Git"} />
                 </S.row>
                 <S.row>
                   <SkillBox text={"Figma"} />
                   <SkillBox text={"Notion"} />
                   <SkillBox text={"Slack"} />
                 </S.row>
+                <S.title style={{ marginTop: "0.6rem" }}>자격증</S.title>
+                <S.cerBox>
+                  {`SQLD
+                  한국사능력검정 2급
+                  컴퓨터활용능력 1급
+                  정보처리기능사
+                  `}
+                </S.cerBox>
               </>
             ) : (
               <S.infoLabel
@@ -232,6 +240,7 @@ const S = {
     width: 100%;
     height: 0.125rem;
     background: #cdcdcd;
+    margin-top: 1.13rem;
   `,
   infoBox: styled.div`
     margin-top: 2.13rem;
@@ -270,6 +279,15 @@ const S = {
     font-weight: 700;
     line-height: normal;
     margin-left: 0.5rem;
+  `,
+  cerBox: styled.div`
+    color: #000;
+    font-size: 0.9375rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.8rem;
+    white-space: pre-line;
   `,
 };
 

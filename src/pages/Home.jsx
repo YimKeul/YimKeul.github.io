@@ -12,7 +12,8 @@ const Home = () => {
         {isDesktop ? (
           <>
             <S.title>
-              <S.point>트렌드</S.point>에 맞춰 함께 성장하는
+              {/* <S.point>트렌드</S.point>에 맞춰 함께 성장하는 */}
+              트렌드에 맞춰 함께 성장하는
               <br /> FrontEnd 개발자 이세준입니다.
             </S.title>
             <S.desc>
@@ -25,7 +26,8 @@ const Home = () => {
         ) : (
           <>
             <S.title>
-              <S.point>트렌드</S.point>에 맞춰
+              {/* <S.point>트렌드</S.point>에 맞춰 */}
+              트렌드에 맞춰
               <br /> 함께 성장하는
               <br />
               이세준입니다.
