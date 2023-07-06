@@ -74,7 +74,7 @@ const S = {
   tlBar: styled.span`
     position: absolute;
     width: 1px;
-    border-right: 2px solid #3aebb6;
+    border-right: 2px solid ${() => point};
     top: 0;
     bottom: 0;
     left: 9.4rem;
@@ -83,7 +83,7 @@ const S = {
     width: 14px;
     height: 14px;
     background-color: #fff;
-    border: 1px solid #3aebb6;
+    border: 1px solid ${() => point};
     border-radius: 50%;
     position: absolute;
     /* top: 1rem; */
@@ -95,8 +95,8 @@ const S = {
   tlBarFillCircle: styled.span`
     width: 8px;
     height: 8px;
-    background-color: #3aebb6;
-    border: 1px solid #3aebb6;
+    background-color: ${() => point};
+    border: 1px solid ${() => point};
     border-radius: 50%;
     position: absolute;
     top: 0.2rem;
