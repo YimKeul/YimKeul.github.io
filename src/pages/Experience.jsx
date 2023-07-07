@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { point, main, purple, gray } from "../components";
+import { point, gray } from "../components";
 import data from "../assets/ExperienceData";
 
 const Experience = () => {

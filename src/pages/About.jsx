@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { point, main, purple, SkillBox, SkillSet } from "../components";
+import { point, main, purple, SkillSet } from "../components";
 import { profile } from "../images";
 import {
   MdPerson,
@@ -9,10 +9,8 @@ import {
   MdLink,
   MdPlayArrow,
 } from "react-icons/md";
-import { useMediaQuery } from "react-responsive";
 
 const About = () => {
-  const isDesktop = useMediaQuery({ minWidth: 1024 });
   const [isMore, setMore] = useState(false);
   const handleMore = () => {
     setMore(!isMore);

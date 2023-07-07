@@ -1,20 +1,10 @@
-import React, { useState } from "react";
-import styled, { css } from "styled-components";
-import { main, glass, point, NavBox } from "./";
+import React from "react";
+import styled from "styled-components";
+import { main, glass, NavBox } from "./";
 import { rsicons } from "../images";
 import { MdHome, MdPerson, MdOutlineStar, MdMonitor } from "react-icons/md";
-import { Link } from "react-scroll";
 
 const Navigator = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
   return (
     <>
       <S.container>
