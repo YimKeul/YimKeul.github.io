@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import styled, { css } from "styled-components";
 import { point, gray } from "./";
+import { Link } from "react-scroll";
 
-const PfBox = ({ icon, title, desc }) => {
+const PfBox = ({ to, icon, title, desc }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -19,9 +20,11 @@ const PfBox = ({ icon, title, desc }) => {
       onMouseLeave={handleMouseLeave}
       ishovered={isHovered.toString()}
     >
-      <S.icon>{icon}</S.icon>
-      <S.title>{title}</S.title>
-      <S.desc>{desc}</S.desc>
+      <Link to={to} smooth={true} duration={500} spy={true} offset={-50}>
+        <S.icon>{icon}</S.icon>
+        <S.title>{title}</S.title>
+        <S.desc>{desc}</S.desc>
+      </Link>
     </S.container>
   );
 };

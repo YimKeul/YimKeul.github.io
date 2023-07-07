@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useMediaQuery } from "react-responsive";
-import { gray, SkillBox } from "./";
+import { SkillBox } from "./";
 
 const SkillSet = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -90,9 +90,6 @@ const SkillSet = () => {
     );
   }
 };
-
-{
-}
 
 const S = {
   title: styled.div`

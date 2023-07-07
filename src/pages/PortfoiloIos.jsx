@@ -4,35 +4,25 @@ import { MdSmartphone, MdOutlineWebAsset } from "react-icons/md";
 import { SiIos } from "react-icons/si";
 import { point, PfBox } from "../components";
 
-const Portfoilo = () => {
+const Portfoilo_Ios = () => {
   return (
-    <S.container id="portfolio">
+    <S.container id="portfolio_ios">
       <S.inner>
         <S.section>
           Portfoilo
+          <S.subTitle>IOS</S.subTitle>
           <S.bar />
         </S.section>
         {/*  */}
         <S.content>
           <S.row>
+            <PfBox icon={<MdOutlineWebAsset />} title={"Web"} desc={"React"} />
             <PfBox
-              to={"portfolio_web"}
-              icon={<MdOutlineWebAsset />}
-              title={"Web"}
-              desc={"React"}
-            />
-            <PfBox
-              to={"portfolio_mobile"}
               icon={<MdSmartphone />}
               title={"Hybrid App"}
               desc={"React-Naitve"}
             />
-            <PfBox
-              to={"portfolio_ios"}
-              icon={<SiIos />}
-              title={"App"}
-              desc={"SwfitUI"}
-            />
+            <PfBox icon={<SiIos />} title={"App"} desc={"SwfitUI"} />
           </S.row>
         </S.content>
       </S.inner>
@@ -98,6 +88,9 @@ const S = {
       flex-direction: column;
     }
   `,
+  subTitle: styled.h6`
+    margin: 0;
+  `,
 };
 
-export default Portfoilo;
+export default Portfoilo_Ios;

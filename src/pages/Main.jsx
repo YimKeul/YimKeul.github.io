@@ -1,5 +1,13 @@
 import React from "react";
-import { Home, About, Experience, Portfoilo } from "./";
+import {
+  Home,
+  About,
+  Experience,
+  Portfoilo,
+  PortfoiloIos,
+  PortfoiloMobile,
+  PortfoiloWeb,
+} from "./";
 import { Navigator } from "../components";
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
@@ -15,6 +23,9 @@ const Main = () => {
       <About />
       <Experience />
       <Portfoilo />
+      <PortfoiloWeb />
+      <PortfoiloMobile />
+      <PortfoiloIos />
     </S.container>
   );
 };
