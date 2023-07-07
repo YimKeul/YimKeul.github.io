@@ -3,6 +3,7 @@ import SkillBox from "./SkillBox";
 import SkillSet from "./SkillSet";
 import PfBox from "./PfBox";
 import NavBox from "./NavBox";
+import InfoBox from "./InfoBox";
 import { main, point, glass, purple, gray } from "./Colors";
 export {
   Navigator,
@@ -15,4 +16,5 @@ export {
   SkillSet,
   PfBox,
   NavBox,
+  InfoBox,
 };

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { point, main, purple, SkillSet } from "../components";
+import { point, main, purple, SkillSet, InfoBox } from "../components";
 import { profile } from "../images";
 import {
   MdPerson,
@@ -72,39 +72,26 @@ const About = () => {
             <S.infoBox>
               <S.row>
                 <S.infoArea1>
-                  <S.infoLabel>
-                    <MdPerson style={{ width: "1rem", height: "1rem" }} />
-                    <S.infoText>이세준</S.infoText>
-                    <S.infoText>Lee SeJun</S.infoText>
-                  </S.infoLabel>
-                  {/*  */}
-                  <S.infoLabel>
-                    <MdOutlineDateRange
-                      style={{ width: "1rem", height: "1rem" }}
-                    />
-                    <S.infoText>1999.02.10</S.infoText>
-                  </S.infoLabel>
-                  {/*  */}
-                  <S.infoLabel>
-                    <MdEmail style={{ width: "1rem", height: "1rem" }} />
-                    <S.infoText>leesjun29@gmail.com</S.infoText>
-                  </S.infoLabel>
+                  <InfoBox icon={<MdPerson />} desc={"이세준 Lee SeJun"} />
+                  <InfoBox icon={<MdOutlineDateRange />} desc={"1999.02.10"} />
+                  <InfoBox icon={<MdEmail />} desc={"leesjun29@gmail.com"} />
                 </S.infoArea1>
                 <S.infoArea2>
-                  <S.infoLabel>
-                    <MdLink style={{ width: "1rem", height: "1rem" }} />
-                    <S.infoText>github</S.infoText>
-                  </S.infoLabel>
-                  {/*  */}
-                  <S.infoLabel>
-                    <MdLink style={{ width: "1rem", height: "1rem" }} />
-                    <S.infoText>velog</S.infoText>
-                  </S.infoLabel>
-                  {/*  */}
-                  <S.infoLabel>
-                    <MdLink style={{ width: "1rem", height: "1rem" }} />
-                    <S.infoText>linked In</S.infoText>
-                  </S.infoLabel>
+                  <S.hyperLink
+                    href="https://github.com/yimkeul"
+                    target="_blank"
+                  >
+                    <InfoBox icon={<MdLink />} desc={"github"} />
+                  </S.hyperLink>
+                  <S.hyperLink href="https://velog.io/@yimkeul" target="_blank">
+                    <InfoBox icon={<MdLink />} desc={"velog"} />
+                  </S.hyperLink>
+                  <S.hyperLink
+                    href="https://www.linkedin.com/in/%EC%84%B8%EC%A4%80-%EC%9D%B4-209456248/"
+                    target="_blank"
+                  >
+                    <InfoBox icon={<MdLink />} desc={"linked In"} />
+                  </S.hyperLink>
                 </S.infoArea2>
               </S.row>
             </S.infoBox>
@@ -116,6 +103,13 @@ const About = () => {
 };
 
 const S = {
+  hyperLink: styled.a`
+    text-decoration: none;
+    &:hover {
+      color: ${() => point};
+    }
+  `,
+
   container: styled.div`
     width: 52rem;
     min-height: 30rem;
