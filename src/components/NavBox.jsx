@@ -37,6 +37,7 @@ const S = {
         ${S.navTitle} {
           font-weight: 800;
         }
+        cursor: pointer;
         transition: all 0.5s ease;
       `}
   `,

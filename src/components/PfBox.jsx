@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled, { css } from "styled-components";
 import { point, gray } from "./";
-import { Link } from "react-scroll";
-
-const PfBox = ({ to, icon, title, desc }) => {
+const PfBox = ({ id, icon, title, desc, setIsFocus }) => {
   const [isHovered, setIsHovered] = useState(false);
+
+  const handleFocus = () => {
+    setIsFocus(id);
+  };
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -20,11 +22,16 @@ const PfBox = ({ to, icon, title, desc }) => {
       onMouseLeave={handleMouseLeave}
       ishovered={isHovered.toString()}
     >
-      <Link to={to} smooth={true} duration={500} spy={true} offset={-50}>
+      <div
+        style={{ height: "100%" }}
+        onClick={() => {
+          handleFocus();
+        }}
+      >
         <S.icon>{icon}</S.icon>
         <S.title>{title}</S.title>
         <S.desc>{desc}</S.desc>
-      </Link>
+      </div>
     </S.container>
   );
 };
@@ -47,6 +54,7 @@ const S = {
       props.ishovered === "true" &&
       css`
         background-color: ${() => point};
+        cursor: pointer;
 
         ${S.icon} {
           color: white;

@@ -4,9 +4,9 @@ import {
   About,
   Experience,
   Portfoilo,
-  PortfoiloIos,
-  PortfoiloMobile,
-  PortfoiloWeb,
+  // PortfoiloIos,
+  // PortfoiloMobile,
+  // PortfoiloWeb,
 } from "./";
 import { Navigator } from "../components";
 import { useMediaQuery } from "react-responsive";
@@ -23,9 +23,9 @@ const Main = () => {
       <About />
       <Experience />
       <Portfoilo />
-      <PortfoiloWeb />
-      <PortfoiloMobile />
-      <PortfoiloIos />
+      {/* <PortfoiloWeb /> */}
+      {/* <PortfoiloMobile /> */}
+      {/* <PortfoiloIos /> */}
     </S.container>
   );
 };

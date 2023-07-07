@@ -1,30 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import { MdSmartphone, MdOutlineWebAsset } from "react-icons/md";
-import { SiIos } from "react-icons/si";
-import { point, PfBox } from "../components";
+import { point, WorksBox } from "../components";
+import { ToD } from "../images";
 
-const Portfoilo_Ios = () => {
+const PortfoiloIos = () => {
   return (
-    <S.container id="portfolio_ios">
+    <S.container>
       <S.inner>
         <S.section>
-          Portfoilo
-          <S.subTitle>IOS</S.subTitle>
+          <S.subTitle>Ios</S.subTitle>
           <S.bar />
         </S.section>
         {/*  */}
-        <S.content>
-          <S.row>
-            <PfBox icon={<MdOutlineWebAsset />} title={"Web"} desc={"React"} />
-            <PfBox
-              icon={<MdSmartphone />}
-              title={"Hybrid App"}
-              desc={"React-Naitve"}
-            />
-            <PfBox icon={<SiIos />} title={"App"} desc={"SwfitUI"} />
-          </S.row>
-        </S.content>
+        <WorksBox img={ToD} />
       </S.inner>
     </S.container>
   );
@@ -33,11 +21,8 @@ const Portfoilo_Ios = () => {
 const S = {
   container: styled.div`
     width: 52rem;
-    /* min-height: 30rem; */
     border-radius: 3.125rem;
     background: #fff;
-    box-shadow: 0px 0px 30px 0px rgba(161, 117, 255, 0.3);
-    margin-bottom: 5rem;
     float: right;
     @media screen and (min-width: 768px) and (max-width: 1023px) {
       width: 100%;
@@ -75,6 +60,7 @@ const S = {
   `,
   content: styled.div`
     margin-top: 2.87rem;
+    flex: 1;
     @media screen and (max-width: 1023px) {
       width: 100%;
     }
@@ -82,15 +68,13 @@ const S = {
   row: styled.div`
     display: flex;
     flex: 1;
-    justify-content: space-around;
-    align-items: center;
     @media screen and (max-width: 767px) {
       flex-direction: column;
     }
   `,
-  subTitle: styled.h6`
+  subTitle: styled.h5`
     margin: 0;
   `,
 };
 
-export default Portfoilo_Ios;
+export default PortfoiloIos;

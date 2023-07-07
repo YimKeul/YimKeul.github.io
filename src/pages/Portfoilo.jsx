@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { MdSmartphone, MdOutlineWebAsset } from "react-icons/md";
 import { SiIos } from "react-icons/si";
 import { point, PfBox } from "../components";
-
+import { PortfoiloWeb, PortfoiloMobile, PortfoiloIos } from "./";
 const Portfoilo = () => {
+  const [isFocus, setIsFocus] = useState("");
+  useEffect(() => {
+    setIsFocus("");
+  }, []);
+
   return (
     <S.container id="portfolio">
       <S.inner>
@@ -16,26 +21,33 @@ const Portfoilo = () => {
         <S.content>
           <S.row>
             <PfBox
-              to={"portfolio_web"}
+              to={"web"}
               icon={<MdOutlineWebAsset />}
               title={"Web"}
               desc={"React"}
+              id={"web"}
+              setIsFocus={setIsFocus}
             />
             <PfBox
-              to={"portfolio_mobile"}
               icon={<MdSmartphone />}
               title={"Hybrid App"}
               desc={"React-Naitve"}
+              id={"mobile"}
+              setIsFocus={setIsFocus}
             />
             <PfBox
-              to={"portfolio_ios"}
               icon={<SiIos />}
               title={"App"}
               desc={"SwfitUI"}
+              id={"ios"}
+              setIsFocus={setIsFocus}
             />
           </S.row>
         </S.content>
       </S.inner>
+      {isFocus === "web" && <PortfoiloWeb />}
+      {isFocus === "mobile" && <PortfoiloMobile />}
+      {isFocus === "ios" && <PortfoiloIos />}
     </S.container>
   );
 };
