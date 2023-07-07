@@ -1,10 +1,20 @@
-import React from "react";
-import styled from "styled-components";
-import { main, glass } from "./";
+import React, { useState } from "react";
+import styled, { css } from "styled-components";
+import { main, glass, point, NavBox } from "./";
 import { rsicons } from "../images";
 import { MdHome, MdPerson, MdOutlineStar, MdMonitor } from "react-icons/md";
+import { Link } from "react-scroll";
 
 const Navigator = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   return (
     <>
       <S.container>
@@ -12,40 +22,15 @@ const Navigator = () => {
           <S.name>Se Jun</S.name>
           <br />
           <S.position>Front End / Mobile Developer</S.position>
-          {/*  */}
-          <S.navBtn style={{ marginTop: "3.12rem" }}>
-            <MdHome
-              style={{ width: "1.5rem", height: "1.5rem" }}
-              color="white"
-            />
-            <S.navTitle>Home</S.navTitle>
-          </S.navBtn>
-
-          {/*  */}
-          <S.navBtn style={{ marginTop: "1rem" }}>
-            <MdPerson
-              style={{ width: "1.5rem", height: "1.5rem" }}
-              color="white"
-            />
-            <S.navTitle>About</S.navTitle>
-          </S.navBtn>
-          {/*  */}
-          <S.navBtn style={{ marginTop: "1rem" }}>
-            <MdOutlineStar
-              style={{ width: "1.5rem", height: "1.5rem" }}
-              color="white"
-            />
-            <S.navTitle>EXPERIENCE</S.navTitle>
-          </S.navBtn>
-          {/*  */}
-          <S.navBtn style={{ marginTop: "1rem" }}>
-            <MdMonitor
-              style={{ width: "1.5rem", height: "1.5rem" }}
-              color="white"
-            />
-            <S.navTitle>PORTFOLIO</S.navTitle>
-          </S.navBtn>
-          {/*  */}
+          <div style={{ marginTop: "2.12rem" }} />
+          <NavBox to={"home"} icon={<MdHome />} title={"Home"} />
+          <NavBox to={"about"} icon={<MdPerson />} title={"About"} />
+          <NavBox
+            to={"experience"}
+            icon={<MdOutlineStar />}
+            title={"Experience"}
+          />
+          <NavBox to={"portfolio"} icon={<MdMonitor />} title={"Portfolio"} />
         </S.inner>
 
         <S.glass>
@@ -98,19 +83,6 @@ const S = {
     margin-bottom: 3.13rem;
   `,
 
-  navBtn: styled.div`
-    display: flex;
-    align-items: flex-end;
-  `,
-  navTitle: styled.span`
-    color: #fff;
-    font-size: 1rem;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-left: 0.94rem;
-  `,
   outer: styled.div`
     margin-top: -1.2rem;
     padding-inline: 1.2rem;

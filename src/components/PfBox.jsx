@@ -1,57 +1,77 @@
-import React from "react";
-import styled from "styled-components";
-import { SiIos } from "react-icons/si";
-import { gray, SkillBox } from "./";
+import React, { useState } from "react";
+import styled, { css } from "styled-components";
+import { point, gray } from "./";
 
-const PfBox = () => {
+const PfBox = ({ icon, title, desc }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <S.container>
-      <SiIos size={"1.5rem"} />
+    <S.container
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      isHovered={isHovered}
+    >
+      <S.icon>{icon}</S.icon>
+      <S.title>{title}</S.title>
+      <S.desc>{desc}</S.desc>
     </S.container>
   );
 };
 
 const S = {
   container: styled.div`
-    width: 220px;
-    height: 160px;
+    width: 13.75rem;
+    height: 10rem;
     padding-top: 1.5rem;
     border: 1px solid #e9ebee;
     border-radius: 1rem;
     text-align: center;
     @media screen and (min-width: 768px) and (max-width: 1023px) {
-      /* width: 10rem; */
     }
     @media screen and (max-width: 767px) {
+      margin-bottom: 2rem;
     }
-  `,
-  title: styled.div`
-    color: #000;
-    font-size: 1.25rem;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+
+    ${(props) =>
+      props.isHovered &&
+      css`
+        background-color: ${() => point};
+
+        ${S.icon} {
+          color: white;
+        }
+        ${S.title} {
+          color: white;
+        }
+        ${S.desc} {
+          color: white;
+        }
+        transition: all 0.5s ease;
+      `}
   `,
   row: styled.div`
     display: flex;
     flex: 1;
   `,
-  row2: styled.div`
-    display: flex;
-    flex: 1;
-    @media screen and (max-width: 767px) {
-      flex-direction: column;
-    }
+
+  icon: styled.div`
+    color: ${() => point};
+    font-size: 1.5rem;
   `,
-  cerBox: styled.div`
-    color: #000;
-    font-size: 0.9375rem;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.8rem;
-    white-space: pre-line;
+  title: styled.h4`
+    margin-bottom: 0;
+  `,
+  desc: styled.p`
+    font-size: 0.875rem;
+    color: ${() => gray};
   `,
 };
 

@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { MdSmartphone, MdOutlineWebAsset } from "react-icons/md";
 import { SiIos } from "react-icons/si";
-import { point, main, purple, PfBox } from "../components";
+import { point, PfBox } from "../components";
 
 const Portfoilo = () => {
   return (
-    <S.container>
+    <S.container id="portfolio">
       <S.inner>
         <S.section>
           Portfoilo
@@ -15,9 +15,13 @@ const Portfoilo = () => {
         {/*  */}
         <S.content>
           <S.row>
-            <PfBox />
-            <PfBox />
-            <PfBox />
+            <PfBox icon={<MdOutlineWebAsset />} title={"Web"} desc={"React"} />
+            <PfBox
+              icon={<MdSmartphone />}
+              title={"Hybrid App"}
+              desc={"React-Naitve"}
+            />
+            <PfBox icon={<SiIos />} title={"App"} desc={"SwfitUI"} />
           </S.row>
         </S.content>
       </S.inner>
@@ -79,7 +83,7 @@ const S = {
     flex: 1;
     justify-content: space-around;
     align-items: center;
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: 767px) {
       flex-direction: column;
     }
   `,

@@ -5,11 +5,9 @@ import { point } from "../components";
 import { useMediaQuery } from "react-responsive";
 
 const Home = () => {
-  const isDesktop = useMediaQuery({ minWidth: 1024 });
-  const isTablet = useMediaQuery({ maxWidth: 1023 });
   const isMobile = useMediaQuery({ maxWidth: 767 });
   return (
-    <S.container>
+    <S.container id="home">
       <S.inner>
         {isMobile ? (
           <>

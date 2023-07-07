@@ -5,7 +5,7 @@ import data from "../assets/ExperienceData";
 
 const Experience = () => {
   return (
-    <S.container>
+    <S.container id="experience">
       <S.inner>
         <S.section>
           Experience

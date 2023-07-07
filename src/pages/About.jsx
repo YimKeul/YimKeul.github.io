@@ -18,7 +18,7 @@ const About = () => {
     setMore(!isMore);
   };
   return (
-    <S.container>
+    <S.container id="about">
       <S.inner>
         <S.section>
           About Me
@@ -105,7 +105,7 @@ const About = () => {
                   {/*  */}
                   <S.infoLabel>
                     <MdLink style={{ width: "1rem", height: "1rem" }} />
-                    <S.infoText>linkednIn</S.infoText>
+                    <S.infoText>linked In</S.infoText>
                   </S.infoLabel>
                 </S.infoArea2>
               </S.row>
