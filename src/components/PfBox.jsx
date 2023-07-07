@@ -17,7 +17,7 @@ const PfBox = ({ icon, title, desc }) => {
     <S.container
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      isHovered={isHovered}
+      ishovered={isHovered.toString()}
     >
       <S.icon>{icon}</S.icon>
       <S.title>{title}</S.title>
@@ -41,7 +41,7 @@ const S = {
     }
 
     ${(props) =>
-      props.isHovered &&
+      props.ishovered === "true" &&
       css`
         background-color: ${() => point};
 

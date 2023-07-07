@@ -17,7 +17,7 @@ const PfBox = ({ to, icon, title }) => {
     <S.LinkContainer
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      isHovered={isHovered}
+      ishovered={isHovered.toString()}
     >
       <Link to={to} smooth={true} duration={500} spy={true} offset={-50}>
         <S.navBtn style={{ marginTop: "1rem" }}>
@@ -32,7 +32,7 @@ const PfBox = ({ to, icon, title }) => {
 const S = {
   LinkContainer: styled.div`
     ${(props) =>
-      props.isHovered &&
+      props.ishovered === "true" &&
       css`
         ${S.navTitle} {
           font-weight: 800;

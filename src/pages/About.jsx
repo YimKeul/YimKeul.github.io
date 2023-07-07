@@ -83,9 +83,9 @@ const About = () => {
                   >
                     <InfoBox icon={<MdLink />} desc={"github"} />
                   </S.hyperLink>
-                  <S.hyperLink href="https://velog.io/@yimkeul" target="_blank">
+                  {/* <S.hyperLink href="https://velog.io/@yimkeul" target="_blank">
                     <InfoBox icon={<MdLink />} desc={"velog"} />
-                  </S.hyperLink>
+                  </S.hyperLink> */}
                   <S.hyperLink
                     href="https://www.linkedin.com/in/%EC%84%B8%EC%A4%80-%EC%9D%B4-209456248/"
                     target="_blank"
@@ -212,15 +212,7 @@ const S = {
     align-items: center;
     margin-bottom: 1rem;
   `,
-  infoText: styled.span`
-    color: #000;
-    font-size: 1rem;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-left: 0.94rem;
-  `,
+
   infoArea1: styled.div`
     flex: 2;
     @media screen and (max-width: 1023px) {
