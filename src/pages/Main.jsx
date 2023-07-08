@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Home,
-  About,
-  Experience,
-  Portfoilo,
-  // PortfoiloIos,
-  // PortfoiloMobile,
-  // PortfoiloWeb,
-} from "./";
+import { Home, About, Experience, Portfolio } from "./";
 import { Navigator } from "../components";
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
@@ -16,16 +8,14 @@ const Main = () => {
   // const isMobile = useMediaQuery({ maxWidth: 767 });
   // const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
   const isDesktop = useMediaQuery({ minWidth: 1024 });
+
   return (
     <S.container>
       {isDesktop && <Navigator />}
       <Home />
       <About />
       <Experience />
-      <Portfoilo />
-      {/* <PortfoiloWeb /> */}
-      {/* <PortfoiloMobile /> */}
-      {/* <PortfoiloIos /> */}
+      <Portfolio />
     </S.container>
   );
 };

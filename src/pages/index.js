@@ -2,17 +2,17 @@ import Main from "./Main";
 import Home from "./Home";
 import About from "./About";
 import Experience from "./Experience";
-import Portfoilo from "./Portfoilo";
-import PortfoiloIos from "./PortfoiloIos";
-import PortfoiloMobile from "./PortfoiloMobile";
-import PortfoiloWeb from "./PortfoiloWeb";
+import Portfolio from "./Portfolio";
+import PortfolioIos from "./PortfolioIos";
+import PortfolioMobile from "./PortfolioMobile";
+import PortfolioWeb from "./PortfolioWeb";
 export {
   Main,
   Home,
   About,
   Experience,
-  Portfoilo,
-  PortfoiloIos,
-  PortfoiloMobile,
-  PortfoiloWeb,
+  Portfolio,
+  PortfolioIos,
+  PortfolioMobile,
+  PortfolioWeb,
 };

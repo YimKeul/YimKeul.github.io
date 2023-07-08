@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { profile } from "../images";
+import { Loading } from "../images";
 
-const WorksBox = ({ img }) => {
+const WorksBox = ({ img, Title, SubTitle, Desc1, Desc2 }) => {
   return (
     <>
       <S.row>
@@ -12,18 +12,24 @@ const WorksBox = ({ img }) => {
             justifyContent: "center",
           }}
         >
-          <S.img src={img} alt="profile" />
+          <S.img
+            src={img}
+            alt="img"
+            onError={(e) => {
+              e.target.src = Loading;
+            }}
+          />
         </S.content>
         <S.content2>
-          <S.title>제목</S.title>
-          <S.desc>소제목</S.desc>
+          <S.title>{Title}</S.title>
+          <S.desc>{SubTitle}</S.desc>
           <S.row>
-            <S.desc2>살명</S.desc2>
-            <S.desc2>내용</S.desc2>
+            <S.desc2>설명</S.desc2>
+            <S.desc2>{Desc1}</S.desc2>
           </S.row>
           <S.row>
             <S.desc2>사용 기술</S.desc2>
-            <S.desc2>내용</S.desc2>
+            <S.desc2>{Desc2}</S.desc2>
           </S.row>
         </S.content2>
       </S.row>
@@ -89,6 +95,7 @@ const S = {
     margin-block: 0.6rem;
   `,
   desc2: styled.div`
+    min-width: fit-content;
     color: black;
     font-family: Inter;
     font-size: 0.8rem;
