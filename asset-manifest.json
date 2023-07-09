@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/yimkeul.github.io/static/css/main.212b932a.css",
-    "main.js": "/yimkeul.github.io/static/js/main.ec40a6d6.js",
-    "static/js/787.b031e383.chunk.js": "/yimkeul.github.io/static/js/787.b031e383.chunk.js",
+    "main.js": "/yimkeul.github.io/static/js/main.e404f18c.js",
     "static/media/bgcard.svg": "/yimkeul.github.io/static/media/bgcard.d9433cf7d1077da2bf044e96af251d44.svg",
     "static/media/profile.svg": "/yimkeul.github.io/static/media/profile.9a5e67078700c954ddc059338c9bfea3.svg",
     "static/media/Find.png": "/yimkeul.github.io/static/media/Find.0a85aeadfd10095c4040.png",
@@ -18,11 +17,10 @@
     "static/media/rsicons.svg": "/yimkeul.github.io/static/media/rsicons.f2e233297d9c94b6b3f855d466e513ba.svg",
     "index.html": "/yimkeul.github.io/index.html",
     "main.212b932a.css.map": "/yimkeul.github.io/static/css/main.212b932a.css.map",
-    "main.ec40a6d6.js.map": "/yimkeul.github.io/static/js/main.ec40a6d6.js.map",
-    "787.b031e383.chunk.js.map": "/yimkeul.github.io/static/js/787.b031e383.chunk.js.map"
+    "main.e404f18c.js.map": "/yimkeul.github.io/static/js/main.e404f18c.js.map"
   },
   "entrypoints": [
     "static/css/main.212b932a.css",
-    "static/js/main.ec40a6d6.js"
+    "static/js/main.e404f18c.js"
   ]
 }
