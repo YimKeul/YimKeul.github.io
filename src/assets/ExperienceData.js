@@ -39,7 +39,7 @@ const data = [
     Desc: `아람코 코리아주관 앱 개발 멘토링`,
   },
   {
-    Date: "2021.08 - 2022.02",
+    Date: "2021.10 - 2022.01",
     Title: "H사 0팀 어플 MVP 개발 외주",
     Desc: `Now Platform 인턴`,
   },
