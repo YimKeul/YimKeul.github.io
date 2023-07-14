@@ -9,6 +9,7 @@ import {
   WearScent,
   WhatAboutThis,
   Yigeyu,
+  ChaCha,
 } from "../images";
 
 const WebData = [
@@ -18,6 +19,13 @@ const WebData = [
     SubTitle: "2023 중심대학 공동해커톤 출품작",
     Desc1: "유사도 검사를 통한 유기견 탐색 및 유기동물 입양 독려 서비스",
     Desc2: "React/Rust/OpenCV",
+  },
+  {
+    Img: ChaCha,
+    Title: "차차렌터카",
+    SubTitle: "DataBase Term Project",
+    Desc1: "충남대 렌터카 서비스",
+    Desc2: "React/MySQL/Axios",
   },
   {
     Img: L,

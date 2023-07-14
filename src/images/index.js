@@ -25,6 +25,7 @@ import ToD from "./pfpng/ToD.png";
 import WearScent from "./pfpng/WearScent.png";
 import WhatAboutThis from "./pfpng/WhatAboutThis.png";
 import Yigeyu from "./pfpng/Yigeyu.png";
+import ChaCha from "./pfpng/ChaCha.png";
 
 export {
   Loading,
@@ -41,4 +42,5 @@ export {
   WearScent,
   WhatAboutThis,
   Yigeyu,
+  ChaCha,
 };
