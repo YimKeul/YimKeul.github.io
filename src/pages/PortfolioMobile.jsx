@@ -7,7 +7,7 @@ const PortfolioMobile = () => {
     <S.container>
       <S.inner>
         <S.section>
-          <S.subTitle>Hybrid App</S.subTitle>
+          <S.subTitle>Mobile</S.subTitle>
           <S.bar />
         </S.section>
         {/*  */}
