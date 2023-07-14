@@ -7,7 +7,7 @@ const PortfolioIos = () => {
     <S.container>
       <S.inner>
         <S.section>
-          <S.subTitle>Ios</S.subTitle>
+          <S.subTitle>iOS</S.subTitle>
           <S.bar />
         </S.section>
         {/*  */}
