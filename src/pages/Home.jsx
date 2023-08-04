@@ -30,7 +30,8 @@ const Home = () => {
             <S.title>
               {/* <S.point>트렌드</S.point>에 맞춰 함께 성장하는 */}
               트렌드에 맞춰 함께 성장하는
-              <br /> FrontEnd 개발자 이세준입니다.
+              <br /> FrontEnd / Mobile 개발자 <br />
+              이세준입니다.
             </S.title>
             <S.desc>
               시시각각 변화하는 스킬과 시대를 따라가기 위해 적극적으로 도전하는
