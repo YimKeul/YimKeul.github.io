@@ -1,4 +1,4 @@
-# 이세준 포트폴리어
+# 이세준 포트폴리오
 
 link : https://yimkeul.github.io/
 
