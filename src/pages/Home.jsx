@@ -19,8 +19,8 @@ const Home = () => {
               이세준입니다.
             </S.title>
             <S.desc>
-              웹(React), 앱(React-Native), iOS(SwiftUI)를 활용해 상황에 맞춰,
-              유연하게 대응해 문제를 해결하는 개발자가 되고 싶습니다.
+              웹(React), 앱(React-Native, iOS)를 활용해 상황에 맞춰, 유연하게
+              대응해 문제를 해결하는 개발자가 되고 싶습니다.
             </S.desc>
           </>
         ) : (
@@ -31,8 +31,8 @@ const Home = () => {
               이세준입니다.
             </S.title>
             <S.desc>
-              웹(React), 앱(React-Native), iOS(SwiftUI)를 활용해 상황에 맞춰,
-              유연하게 대응해 문제를 해결하는 개발자가 되고 싶습니다.
+              웹(React), 앱(React-Native, iOS)를 활용해 상황에 맞춰, 유연하게
+              대응해 문제를 해결하는 개발자가 되고 싶습니다.
             </S.desc>
           </>
         )}

@@ -20,6 +20,8 @@ const PortfolioIos = () => {
               SubTitle={data.SubTitle}
               Desc1={data.Desc1}
               Desc2={data.Desc2}
+              isDeploy={data.IsDeploy}
+              link={data.link}
             />
           );
         })}

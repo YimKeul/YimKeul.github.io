@@ -37,8 +37,8 @@ const Portfoilo = () => {
             />
             <PfBox
               icon={<SiIos />}
-              title={"iOS"}
-              desc={"SwfitUI"}
+              title={"Mobile"}
+              desc={"iOS"}
               id={"ios"}
               setIsFocus={setIsFocus}
             />

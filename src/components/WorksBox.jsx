@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { Loading } from "../images";
+import { Loading, github, web, apple } from "../images";
 
-const WorksBox = ({ img, Title, SubTitle, Desc1, Desc2 }) => {
+const WorksBox = ({ img, Title, SubTitle, Desc1, Desc2, isDeploy, link }) => {
   return (
     <>
       <S.row>
@@ -31,6 +31,21 @@ const WorksBox = ({ img, Title, SubTitle, Desc1, Desc2 }) => {
             <S.desc2>사용 기술</S.desc2>
             <S.desc2>{Desc2}</S.desc2>
           </S.row>
+          {isDeploy === "none" ? (
+            <div></div>
+          ) : isDeploy === "github" ? (
+            <a href={link} target="_blank" rel="noreferrer noopener">
+              <S.baner src={github} alt="img" />
+            </a>
+          ) : isDeploy === "web" ? (
+            <a href={link} target="_blank" rel="noreferrer noopener">
+              <S.baner src={web} alt="img" />
+            </a>
+          ) : isDeploy === "apple" ? (
+            <a href={link} target="_blank" rel="noreferrer noopener">
+              <S.baner src={apple} alt="img" />
+            </a>
+          ) : null}
         </S.content2>
       </S.row>
       <S.line />
@@ -66,6 +81,11 @@ const S = {
   img: styled.img`
     width: 100%;
     /* height: 100%; */
+    object-fit: contain;
+  `,
+  baner: styled.img`
+    width: 119.66;
+    height: 40;
     object-fit: contain;
   `,
   line: styled.div`
@@ -106,6 +126,9 @@ const S = {
     margin-right: 1rem;
     white-space: pre-line;
     margin-block: 0.6rem;
+  `,
+  a: styled.a`
+    text-decoration: none;
   `,
 };
 

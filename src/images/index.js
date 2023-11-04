@@ -2,18 +2,6 @@ import rsicons from "./rsicons.svg";
 import bgcard from "./bgcard.svg";
 import profile from "./profile.svg";
 import Loading from "./Loading.png";
-//
-//
-// import ToD from "./pf/ToD.svg";
-// import Find from "./pf/Find.svg";
-// import H from "./pf/H.svg";
-// import L from "./pf/L.svg";
-// import MH from "./pf/MH.svg";
-// import WearScent from "./pf/WearScent.svg";
-// import WhatAboutThis from "./pf/WhatAboutThis.svg";
-// import Yigeyu from "./pf/Yigeyu.svg";
-// import FindDog from "./pf/FindDog.svg";
-// import Lago from "./pf/Lago.svg";
 
 import Find from "./pfpng/Find.png";
 import FindDog from "./pfpng/FindDog.png";
@@ -26,6 +14,11 @@ import WearScent from "./pfpng/WearScent.png";
 import WhatAboutThis from "./pfpng/WhatAboutThis.png";
 import Yigeyu from "./pfpng/Yigeyu.png";
 import ChaCha from "./pfpng/ChaCha.png";
+import Imscent from "./pfpng/Imscent.png";
+
+import web from "./baner/web.svg";
+import apple from "./baner/apple.svg";
+import github from "./baner/github.svg";
 
 export {
   Loading,
@@ -43,4 +36,8 @@ export {
   WhatAboutThis,
   Yigeyu,
   ChaCha,
+  Imscent,
+  web,
+  apple,
+  github,
 };
