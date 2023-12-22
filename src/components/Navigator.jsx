@@ -43,7 +43,7 @@ const S = {
   `,
 
   glass: styled.div`
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     width: 18.25rem;
     height: 4.125rem;
     border-radius: 0 0 3.125rem 3.125rem;
