@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.212b932a.css",
-    "main.js": "/static/js/main.b8590d92.js",
-    "static/media/bgcard.svg": "/static/media/bgcard.13c1e1abce87309e6163fedadd49e3b4.svg",
-    "static/media/profile.svg": "/static/media/profile.eceb9e4dcf360801fdbc7f5440cc3fba.svg",
+    "main.js": "/static/js/main.7b7d67ee.js",
+    "static/media/bgcard.svg": "/static/media/bgcard.d9433cf7d1077da2bf044e96af251d44.svg",
+    "static/media/profile.svg": "/static/media/profile.9a5e67078700c954ddc059338c9bfea3.svg",
     "static/media/Find.png": "/static/media/Find.0a85aeadfd10095c4040.png",
     "static/media/ChaCha.png": "/static/media/ChaCha.2be4e8b2875024dfd3db.png",
     "static/media/WearScent.png": "/static/media/WearScent.fd86c12d3dbbb4c82aae.png",
@@ -13,19 +13,20 @@
     "static/media/H.png": "/static/media/H.1b74c48a211c0df1d511.png",
     "static/media/ToD.png": "/static/media/ToD.74a4f08fa5eb30514882.png",
     "static/media/L.png": "/static/media/L.7e56fc49b7c305b4c29d.png",
+    "static/media/PerfumeIntroduction.png": "/static/media/PerfumeIntroduction.ef71550fa23c47efde84.png",
     "static/media/FindDog.png": "/static/media/FindDog.825350ed9f4d3ef13283.png",
     "static/media/Lago.png": "/static/media/Lago.4db99080fa4b9cc1725c.png",
     "static/media/WhatAboutThis.png": "/static/media/WhatAboutThis.11af16821fa12fc2a8fb.png",
-    "static/media/web.svg": "/static/media/web.df0af4a59517695595f511e07cb8fddc.svg",
-    "static/media/apple.svg": "/static/media/apple.38e6bd273c58b5a8c05a19b02c3f481b.svg",
-    "static/media/github.svg": "/static/media/github.c8fc77248f9e1dd1baee675cf02a781f.svg",
-    "static/media/rsicons.svg": "/static/media/rsicons.d081f8cdd52a811ca29cd7fbc93e9c96.svg",
+    "static/media/web.svg": "/static/media/web.983765072d053ec4b511dae0f796e3c4.svg",
+    "static/media/apple.svg": "/static/media/apple.a22b8e0f15c8a353131b9282e2b2087e.svg",
+    "static/media/github.svg": "/static/media/github.e6c31fee5fd9235858e02531452183ea.svg",
+    "static/media/rsicons.svg": "/static/media/rsicons.f2e233297d9c94b6b3f855d466e513ba.svg",
     "index.html": "/index.html",
     "main.212b932a.css.map": "/static/css/main.212b932a.css.map",
-    "main.b8590d92.js.map": "/static/js/main.b8590d92.js.map"
+    "main.7b7d67ee.js.map": "/static/js/main.7b7d67ee.js.map"
   },
   "entrypoints": [
     "static/css/main.212b932a.css",
-    "static/js/main.b8590d92.js"
+    "static/js/main.7b7d67ee.js"
   ]
 }
