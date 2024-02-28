@@ -11,30 +11,27 @@ const SkillSet = () => {
         <S.title>개발 직무</S.title>
         <S.row2>
           <S.row>
-            <SkillBox text={"WEB 개발자"} />
-            <SkillBox text={"IOS 개발자"} />
+            <SkillBox text={"iOS 개발자"} />
+            <SkillBox text={"macOS 개발자"} />
+            <SkillBox text={"Web 개발자"} />
           </S.row>
-
-          <SkillBox text={"크로스플랫폼 앱개발자"} />
         </S.row2>
         <S.title style={{ marginTop: "0.6rem" }}>기술 스택</S.title>
         <S.row>
           <S.row2>
-            <SkillBox text={"JavaScript"} />
-            <SkillBox text={"TypeScript"} />
-            <SkillBox text={"Python"} />
-            <SkillBox text={"Java"} />
             <SkillBox text={"Swift"} />
-            <SkillBox text={"Figma"} />
-            <SkillBox text={"Notion"} />
-          </S.row2>
-          <S.row2>
+            <SkillBox text={"SwiftUI"} />
             <SkillBox text={"React"} />
             <SkillBox text={"React-Native"} />
-            <SkillBox text={"SwiftUI"} />
-            <SkillBox text={"Oracle"} />
+            <SkillBox text={"JavaScript"} />
+            <SkillBox text={"TypeScript"} />
+          </S.row2>
+          <S.row2>
+            <SkillBox text={"Python"} />
+            <SkillBox text={"SQL"} />
             <SkillBox text={"Git"} />
-
+            <SkillBox text={"Figma"} />
+            <SkillBox text={"Notion"} />
             <SkillBox text={"Slack"} />
           </S.row2>
         </S.row>
@@ -54,26 +51,25 @@ const SkillSet = () => {
       <>
         <S.title>개발 직무</S.title>
         <S.row2>
-          <SkillBox text={"WEB 개발자"} />
-          <SkillBox text={"IOS 개발자"} />
-          <SkillBox text={"크로스플랫폼 앱개발자"} />
+          <SkillBox text={"iOS 개발자"} />
+          <SkillBox text={"macOS 개발자"} />
+          <SkillBox text={"Web 개발자"} />
         </S.row2>
         <S.title style={{ marginTop: "0.6rem" }}>기술 스택</S.title>
+        <S.row2>
+          <SkillBox text={"Swift"} />
+          <SkillBox text={"SwiftUI"} />
+          <SkillBox text={"React"} />
+          <SkillBox text={"React-Native"} />
+        </S.row2>
         <S.row2>
           <SkillBox text={"JavaScript"} />
           <SkillBox text={"TypeScript"} />
           <SkillBox text={"Python"} />
-          <SkillBox text={"Java"} />
-          <SkillBox text={"Swift"} />
+          <SkillBox text={"SQL"} />
         </S.row2>
         <S.row2>
-          <SkillBox text={"React"} />
-          <SkillBox text={"React-Native"} />
-          <SkillBox text={"SwiftUI"} />
-          <SkillBox text={"Oracle"} />
           <SkillBox text={"Git"} />
-        </S.row2>
-        <S.row2>
           <SkillBox text={"Figma"} />
           <SkillBox text={"Notion"} />
           <SkillBox text={"Slack"} />

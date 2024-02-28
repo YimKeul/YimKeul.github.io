@@ -11,7 +11,10 @@ const Navigator = () => {
         <S.inner>
           <S.name>Se Jun</S.name>
           <br />
-          <S.position>Front End / Mobile Developer</S.position>
+          <S.position>
+            iOS, macOS Developer
+            <br />& Front-End
+          </S.position>
           <div style={{ marginTop: "2.12rem" }} />
           <NavBox to={"home"} icon={<MdHome />} title={"Home"} />
           <NavBox to={"about"} icon={<MdPerson />} title={"About"} />

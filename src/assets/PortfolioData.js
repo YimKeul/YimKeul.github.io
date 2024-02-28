@@ -11,6 +11,7 @@ import {
   Yigeyu,
   ChaCha,
   Imscent,
+  PerfumeIntroduction,
 } from "../images";
 
 const WebData = [
@@ -111,6 +112,15 @@ const MobileData = [
 ];
 
 const IosData = [
+  {
+    Img: PerfumeIntroduction,
+    Title: "PerfumeIntroduction",
+    SubTitle: "향수기초서",
+    Desc1: "향수 기초 지식 안내서, 2024 Swift Student Challenge 출품작",
+    Desc2: "SwiftUI",
+    IsDeploy: "none",
+    link: "",
+  },
   {
     Img: Imscent,
     Title: "IMSCENT 임센트",
