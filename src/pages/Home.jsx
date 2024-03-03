@@ -2,40 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { bgcard } from "../images";
 import { point } from "../components";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 
 const Home = () => {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  // const isMobile = useMediaQuery({ maxWidth: 767 });
   return (
     <S.container id="home">
       <S.inner>
-        {/* {isMobile ? (
-          <>
-            <S.title>
-              유연하게
-              <br /> 문제를 해결하는 개발자
-              <br />
-              이세준입니다.
-            </S.title>
-            <S.desc>
-              웹(React), 앱(React-Native, iOS)를 활용해 상황에 맞춰, 유연하게
-              대응해 문제를 해결하는 개발자가 되고 싶습니다.
-            </S.desc>
-          </>
-        ) : (
-          <>
-            <S.title>
-              유연하게 문제를 해결하는
-              <br /> FrontEnd / Mobile 개발자 <br />
-              이세준입니다.
-            </S.title>
-            <S.desc>
-              웹(React), 앱(React-Native, iOS)를 활용해 상황에 맞춰, 유연하게
-              대응해 문제를 해결하는 개발자가 되고 싶습니다.
-            </S.desc>
-          </>
-        )} */}
-
         <S.title>
           유연하게
           <br /> 문제를 해결하는 개발자
@@ -57,8 +30,9 @@ const Home = () => {
 const S = {
   container: styled.div`
     width: 52rem;
-    height: 30rem;
+    // min-height: 20rem;
     border-radius: 3.125rem;
+    // background: #000000;
     background-image: url(${bgcard});
     background-repeat: no-repeat;
     background-size: cover;
