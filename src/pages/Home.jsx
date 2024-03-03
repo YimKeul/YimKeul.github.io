@@ -115,7 +115,7 @@ const S = {
     font-style: normal;
     font-weight: 600;
     line-height: 2.5rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
     @media screen and (max-width: 1023px) {
       margin-top: 2rem;
       line-height: 2rem;

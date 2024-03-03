@@ -39,12 +39,12 @@ const S = {
     background: ${() => main};
     border-radius: 3.125rem 3.125rem 0 0;
     width: 18.25rem;
-    height: 22.375rem;
+    height: 22rem;
     position: fixed;
   `,
 
   glass: styled.div`
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     width: 18.25rem;
     height: 4.125rem;
     border-radius: 0 0 3.125rem 3.125rem;
