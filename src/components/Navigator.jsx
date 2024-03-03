@@ -6,33 +6,31 @@ import { MdHome, MdPerson, MdOutlineStar, MdMonitor } from "react-icons/md";
 
 const Navigator = () => {
   return (
-    <>
-      <S.container>
-        <S.inner>
-          <S.name>Se Jun</S.name>
-          <br />
-          <S.position>
-            iOS, macOS Developer
-            <br />& Front-End
-          </S.position>
-          <div style={{ marginTop: "2.12rem" }} />
-          <NavBox to={"home"} icon={<MdHome />} title={"Home"} />
-          <NavBox to={"about"} icon={<MdPerson />} title={"About"} />
-          <NavBox
-            to={"experience"}
-            icon={<MdOutlineStar />}
-            title={"Experience"}
-          />
-          <NavBox to={"portfolio"} icon={<MdMonitor />} title={"Portfolio"} />
-        </S.inner>
+    <S.container>
+      <S.inner>
+        <S.name>Se Jun</S.name>
+        <br />
+        <S.position>
+          iOS, macOS Developer
+          <br />& Front-End
+        </S.position>
+        <div style={{ marginTop: "1rem" }} />
+        <NavBox to={"home"} icon={<MdHome />} title={"Home"} />
+        <NavBox to={"about"} icon={<MdPerson />} title={"About"} />
+        <NavBox
+          to={"experience"}
+          icon={<MdOutlineStar />}
+          title={"Experience"}
+        />
+        <NavBox to={"portfolio"} icon={<MdMonitor />} title={"Portfolio"} />
+      </S.inner>
 
-        <S.glass>
-          <S.outer>
-            <img src={rsicons} alt="logo" />
-          </S.outer>
-        </S.glass>
-      </S.container>
-    </>
+      <S.glass>
+        <S.outer>
+          <img src={rsicons} alt="logo" />
+        </S.outer>
+      </S.glass>
+    </S.container>
   );
 };
 

@@ -57,7 +57,7 @@ const Home = () => {
 const S = {
   container: styled.div`
     width: 52rem;
-    height: 26rem;
+    height: 30rem;
     border-radius: 3.125rem;
     background-image: url(${bgcard});
     background-repeat: no-repeat;
@@ -76,7 +76,7 @@ const S = {
     }
   `,
   inner: styled.div`
-    margin-block: 2rem;
+    margin-block: 3.25rem;
     padding-inline: 3.88rem;
     @media screen and (max-width: 1023px) {
       margin: 0;
@@ -115,9 +115,9 @@ const S = {
     font-style: normal;
     font-weight: 600;
     line-height: 2.5rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
     @media screen and (max-width: 1023px) {
-      // margin-top: 1rem;
+      margin-top: 2rem;
       line-height: 2rem;
     }
   `,
