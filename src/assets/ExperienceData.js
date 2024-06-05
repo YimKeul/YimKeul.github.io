@@ -1,6 +1,6 @@
 const data = [
   {
-    Date: "2023.06 - ",
+    Date: "2023.06 - 2024.05",
     Title: "엑소스피어랩스 인턴",
     Desc: `part.MacOS
     자사 서비스 기능 개선`,

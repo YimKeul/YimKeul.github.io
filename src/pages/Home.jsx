@@ -19,8 +19,7 @@ const Home = () => {
           iOS, macOS Developer & Front-End
           <br />
           Front-End 에 흥미를 가지고 개발에 입문했습니다. 지금은 Swift를
-          공부하며 iOS, macOS를 개발 중입니다. B2B 클라우드 보안 프로그램 서비스
-          회사에 macOS 인턴 근무중입니다.
+          공부하며 iOS, macOS Application 개발하고 있습니다.
         </S.desc>
       </S.inner>
     </S.container>
