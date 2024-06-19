@@ -76,7 +76,8 @@ const SkillSet = () => {
         </S.row2>
         <S.title style={{ marginTop: "0.6rem" }}>자격증</S.title>
         <S.cerBox>
-          {`SQLD
+          {`정보처리기자
+          SQLD
                   한국사능력검정 2급
                   컴퓨터활용능력 1급
                   정보처리기능사
