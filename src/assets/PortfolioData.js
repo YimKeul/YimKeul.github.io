@@ -12,6 +12,7 @@ import {
   ChaCha,
   Imscent,
   PerfumeIntroduction,
+  StellaMusic,
 } from "../images";
 
 const WebData = [
@@ -112,6 +113,15 @@ const MobileData = [
 ];
 
 const IosData = [
+  {
+    Img: StellaMusic,
+    Title: "스텔라뮤직",
+    SubTitle: '버튜버그룹 "스텔라이브" 뮤직 플레이어',
+    Desc1: "AVQueuePlaer를 활용한 뮤직 플레이어, App Store 배포",
+    Desc2: "SwiftUI/AVQueuePlayer/Combine/Supabase",
+    IsDeploy: "apple",
+    link: "https://apps.apple.com/kr/app/%EC%8A%A4%ED%85%94%EB%9D%BC%EB%AE%A4%EC%A7%81/id6673917863",
+  },
   {
     Img: PerfumeIntroduction,
     Title: "PerfumeIntroduction",

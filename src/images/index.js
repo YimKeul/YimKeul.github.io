@@ -16,6 +16,7 @@ import Yigeyu from "./pfpng/Yigeyu.png";
 import ChaCha from "./pfpng/ChaCha.png";
 import Imscent from "./pfpng/Imscent.png";
 import PerfumeIntroduction from "./pfpng/PerfumeIntroduction.png";
+import StellaMusic from "./pfpng/StellaMusic.png";
 
 import web from "./baner/web.svg";
 import apple from "./baner/apple.svg";
@@ -42,4 +43,5 @@ export {
   apple,
   github,
   PerfumeIntroduction,
+  StellaMusic,
 };
