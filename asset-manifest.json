@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.212b932a.css",
-    "main.js": "/static/js/main.403cd86f.js",
+    "main.js": "/static/js/main.30da7d0e.js",
     "static/media/bgcard.svg": "/static/media/bgcard.d9433cf7d1077da2bf044e96af251d44.svg",
     "static/media/profile.svg": "/static/media/profile.9a5e67078700c954ddc059338c9bfea3.svg",
     "static/media/Find.png": "/static/media/Find.0a85aeadfd10095c4040.png",
@@ -12,6 +12,7 @@
     "static/media/Yigeyu.png": "/static/media/Yigeyu.4042d8a8c08c032e646c.png",
     "static/media/MH.png": "/static/media/MH.67b9596ae3a7dda097ef.png",
     "static/media/H.png": "/static/media/H.1b74c48a211c0df1d511.png",
+    "static/media/Comi.png": "/static/media/Comi.d057e0837680a05a78fa.png",
     "static/media/ToD.png": "/static/media/ToD.74a4f08fa5eb30514882.png",
     "static/media/L.png": "/static/media/L.7e56fc49b7c305b4c29d.png",
     "static/media/PerfumeIntroduction.png": "/static/media/PerfumeIntroduction.ef71550fa23c47efde84.png",
@@ -24,10 +25,10 @@
     "static/media/rsicons.svg": "/static/media/rsicons.f2e233297d9c94b6b3f855d466e513ba.svg",
     "index.html": "/index.html",
     "main.212b932a.css.map": "/static/css/main.212b932a.css.map",
-    "main.403cd86f.js.map": "/static/js/main.403cd86f.js.map"
+    "main.30da7d0e.js.map": "/static/js/main.30da7d0e.js.map"
   },
   "entrypoints": [
     "static/css/main.212b932a.css",
-    "static/js/main.403cd86f.js"
+    "static/js/main.30da7d0e.js"
   ]
 }
