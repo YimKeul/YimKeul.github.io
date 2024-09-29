@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.212b932a.css",
-    "main.js": "/static/js/main.8e576740.js",
+    "main.js": "/static/js/main.403cd86f.js",
     "static/media/bgcard.svg": "/static/media/bgcard.d9433cf7d1077da2bf044e96af251d44.svg",
     "static/media/profile.svg": "/static/media/profile.9a5e67078700c954ddc059338c9bfea3.svg",
     "static/media/Find.png": "/static/media/Find.0a85aeadfd10095c4040.png",
     "static/media/ChaCha.png": "/static/media/ChaCha.2be4e8b2875024dfd3db.png",
     "static/media/WearScent.png": "/static/media/WearScent.fd86c12d3dbbb4c82aae.png",
     "static/media/Imscent.png": "/static/media/Imscent.7d33f2bbd9ecdf1d615e.png",
+    "static/media/StellaMusic.png": "/static/media/StellaMusic.b2e4ff55772043ccb6a0.png",
     "static/media/Yigeyu.png": "/static/media/Yigeyu.4042d8a8c08c032e646c.png",
     "static/media/MH.png": "/static/media/MH.67b9596ae3a7dda097ef.png",
     "static/media/H.png": "/static/media/H.1b74c48a211c0df1d511.png",
@@ -23,10 +24,10 @@
     "static/media/rsicons.svg": "/static/media/rsicons.f2e233297d9c94b6b3f855d466e513ba.svg",
     "index.html": "/index.html",
     "main.212b932a.css.map": "/static/css/main.212b932a.css.map",
-    "main.8e576740.js.map": "/static/js/main.8e576740.js.map"
+    "main.403cd86f.js.map": "/static/js/main.403cd86f.js.map"
   },
   "entrypoints": [
     "static/css/main.212b932a.css",
-    "static/js/main.8e576740.js"
+    "static/js/main.403cd86f.js"
   ]
 }
