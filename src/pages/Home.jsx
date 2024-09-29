@@ -10,16 +10,14 @@ const Home = () => {
     <S.container id="home">
       <S.inner>
         <S.title>
-          유연하게
-          <br /> 문제를 해결하는 개발자
-          <br />
-          이세준입니다.
+          개발로 즐거운 경험을 제공하는 <br />
+          iOS 개발자 이세준입니다.
         </S.title>
         <S.desc>
           iOS, macOS Developer & Front-End
           <br />
           Front-End 에 흥미를 가지고 개발에 입문했습니다. 지금은 Swift를
-          공부하며 iOS, macOS Application 개발하고 있습니다.
+          공부하며 iOS Application 개발하고 있습니다.
         </S.desc>
       </S.inner>
     </S.container>

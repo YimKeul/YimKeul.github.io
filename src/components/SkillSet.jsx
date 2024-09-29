@@ -8,7 +8,7 @@ const SkillSet = () => {
   if (isMobile) {
     return (
       <>
-        <S.title>개발 직무</S.title>
+        <S.title>희망 개발 직무</S.title>
         <S.row2>
           <S.row>
             <SkillBox text={"iOS 개발자"} />
@@ -49,7 +49,7 @@ const SkillSet = () => {
   } else {
     return (
       <>
-        <S.title>개발 직무</S.title>
+        <S.title>희망 개발 직무</S.title>
         <S.row2>
           <SkillBox text={"iOS 개발자"} />
           <SkillBox text={"macOS 개발자"} />
