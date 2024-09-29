@@ -17,6 +17,7 @@ import ChaCha from "./pfpng/ChaCha.png";
 import Imscent from "./pfpng/Imscent.png";
 import PerfumeIntroduction from "./pfpng/PerfumeIntroduction.png";
 import StellaMusic from "./pfpng/StellaMusic.png";
+import Comi from "./pfpng/Comi.png";
 
 import web from "./baner/web.svg";
 import apple from "./baner/apple.svg";
@@ -44,4 +45,5 @@ export {
   github,
   PerfumeIntroduction,
   StellaMusic,
+  Comi,
 };

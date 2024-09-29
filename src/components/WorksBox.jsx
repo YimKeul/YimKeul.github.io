@@ -31,7 +31,7 @@ const WorksBox = ({ img, Title, SubTitle, Desc1, Desc2, isDeploy, link }) => {
             <S.desc2>사용 기술</S.desc2>
             <S.desc2>{Desc2}</S.desc2>
           </S.row>
-          {isDeploy === "none" ? (
+          {/* {isDeploy === "none" ? (
             <div></div>
           ) : isDeploy === "github" ? (
             <a href={link} target="_blank" rel="noreferrer noopener">
@@ -45,7 +45,48 @@ const WorksBox = ({ img, Title, SubTitle, Desc1, Desc2, isDeploy, link }) => {
             <a href={link} target="_blank" rel="noreferrer noopener">
               <S.baner src={apple} alt="img" />
             </a>
-          ) : null}
+          ) : null} */}
+
+          {isDeploy &&
+            isDeploy.length > 0 &&
+            isDeploy.map((deployType, index) => {
+              if (deployType === "github") {
+                return (
+                  <a
+                    key={index}
+                    href={link[index]}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <S.baner src={github} alt="github" />
+                  </a>
+                );
+              } else if (deployType === "web") {
+                return (
+                  <a
+                    key={index}
+                    href={link[index]}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <S.baner src={web} alt="web" />
+                  </a>
+                );
+              } else if (deployType === "apple") {
+                return (
+                  <a
+                    key={index}
+                    href={link[index]}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <S.baner src={apple} alt="apple" />
+                  </a>
+                );
+              } else {
+                return null;
+              }
+            })}
         </S.content2>
       </S.row>
       <S.line />
@@ -73,6 +114,7 @@ const S = {
     flex: 1;
     margin-block: auto;
     margin-left: 3rem;
+
     @media screen and (max-width: 1023px) {
       width: 100%;
       margin: 2.87rem auto;
@@ -126,6 +168,8 @@ const S = {
     margin-right: 1rem;
     white-space: pre-line;
     margin-block: 0.6rem;
+    word-wrap: break-word; // 텍스트가 너무 길 때 줄바꿈
+    word-break: break-word; // 단어가 너무 길 때 줄바꿈
   `,
   a: styled.a`
     text-decoration: none;
